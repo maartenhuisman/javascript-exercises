@@ -1,13 +1,12 @@
-const removeFromArray = function(totalArray, others) {
-    const othersArray = [others];
+const removeFromArray = function(totalArray, ...othersArray) {
     let othersLength = othersArray.length;
     let totalLength = totalArray.length;
-    console.log(totalArray);
-    console.log(othersArray);
-    console.log(othersLength);
-    for (let i = 0; i < othersLength; i++) {
+    console.log('total: ', totalArray);
+    console.log('others: ', othersArray);
+    console.log('othersLength: ', othersLength);
+    for (let x = 0; x < othersLength; x++) {
         for (let i = 0; i < totalLength; i++) {
-            if (totalArray[i] === othersArray[0]) {
+            if (totalArray[i] === othersArray[x]) {
                 totalArray.splice(i,1);
             }
             console.log(totalArray);
