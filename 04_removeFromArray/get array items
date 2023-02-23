@@ -1,0 +1,17 @@
+get array items
+get removable items
+get array items length
+get removable items length
+compare first removable item with first array item
+    > remove array item when equal
+    > leave array item when not equal
+    go to next array item & compare again (loop for array item length)
+        > remove array item when equal
+        > leave array item when not equal
+go to next removable item & compare again (loop for removable item length)
+    > remove array item when equal
+    > leave array item when not equal
+    go to next array item & compare again (loop for array item length)
+        > remove array item when equal
+        > leave array item when not equal
+return new array items (in order)
